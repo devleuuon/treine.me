@@ -5,9 +5,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;
+}
+
+
 #page {
     width: 1000px;
-    margin: 65px auto 0px;
+    margin: 0px auto;
+    padding: 65px;
 }
 
 .header {
@@ -30,10 +37,12 @@ ul, li a {
     text-decoration: none;
     color: #1F1534;
     font-weight: 400;
+    opacity: 0.5;
 }
 
 ul, li a:hover {
     font-weight: bold;
+    opacity: 1;
 }
 
 h1 {
@@ -66,6 +75,7 @@ span {
 button {
     width: 179px;
     height: 56px;
+    font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     padding: 14px 32px 15px 32px;
     display: flex;
@@ -77,6 +87,10 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color:#355f50;
 }
 
 main {
@@ -105,8 +119,8 @@ footer a {
 }
 
 .decoration {
-    position: absolute;
-    top: 1;
+    position: fixed;
+    bottom: 0;
     right: 0;
 }
 
